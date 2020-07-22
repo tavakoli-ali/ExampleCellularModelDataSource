@@ -1,0 +1,74 @@
+line_length: 140
+force_cast: error
+
+custom_rules:
+  no_defaults_without_storage:
+    excluded: ".*Storage*\\.swift"
+    name: "User Defaults direct access"
+    regex: "UserDefaults."
+    message: "Don't access the user defaults directly. Use a storage instead."
+    severity: error
+
+  no_viewcontroller_navigation:
+    included: ".*ViewController\\.swift"
+    name: "ViewController Coordinator"
+    regex: "(pushViewController\\(|popViewController\\()"
+    message: "View Controllers should not push or pop view controllers. Use a coordinator instead."
+    severity: error
+
+  no_segues:
+    included: ".*ViewController\\.swift"
+    name: "ViewController Segues"
+    regex: "performSegue\\("
+    message: "No segues (in View Controllers). Use a coordinator instead"
+    severity: error
+
+  no_viewcontroller_datareceiver:
+    included: ".*ViewController\\.swift"
+    name: "ViewController DataReceiver"
+    regex: "DataReceiver"
+    message: "View controllers should not act as data receiver. Consider to use the ViewModel instead."
+    severity: warning
+    
+  no_date_instantiation:
+    included: ".*\\.swift"
+    name: "Date Instance"
+    regex: "Date\\(\\)"
+    message: "Use 'TimeManager.shared.currentCalculatedTime' instead"
+    severity: warning
+
+disabled_rules: # rule identifiers to exclude from running
+  - cyclomatic_complexity
+  - notification_center_detachment
+excluded: # paths to ignore during linting.
+  - Pods
+type_name:
+  min_length: 3
+  max_length: 50
+        
+nesting:
+  type_level: 2
+
+identifier_name:
+  excluded:
+    - id
+    - on
+    - T
+    - ok
+    - h1
+    - h2
+    - h3
+    - h4
+    - t1
+    - t2
+    - t3
+    - t4
+    - t5
+    - x
+    - y
+    - to
+
+type_name:
+  excluded:
+    - S
+    - T

@@ -1,0 +1,26 @@
+PODS:
+  - CellularModelDataSource (5.1.0):
+    - CellularModelDataSource/Core (= 5.1.0)
+  - CellularModelDataSource/Core (5.1.0)
+  - ReachabilitySwift (5.0.0)
+  - SwiftLint (0.39.2)
+
+DEPENDENCIES:
+  - CellularModelDataSource
+  - ReachabilitySwift
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - CellularModelDataSource
+    - ReachabilitySwift
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  CellularModelDataSource: e9e9a1ccb3459f594df5a47f0ed60341b0d59af5
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
+
+PODFILE CHECKSUM: 1920da6f8aeb50eacc47f2fb3d1927cccbe2a84a
+
+COCOAPODS: 1.9.3

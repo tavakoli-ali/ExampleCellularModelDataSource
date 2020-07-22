@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ComicCell" rowHeight="652" id="3ND-i2-dtH" customClass="ComicCell" customModule="ExamoleCellularModelDataSource" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="421" height="652"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3ND-i2-dtH" id="ch2-4t-xWr">
+                <rect key="frame" x="0.0" y="0.0" width="421" height="652"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ey4-dk-3gQ">
+                        <rect key="frame" x="0.0" y="0.0" width="421" height="652"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aAw-ov-aHR" userLabel="Charachterimage" customClass="CustomUIImageView" customModule="ExamoleCellularModelDataSource" customModuleProvider="target">
+                                <rect key="frame" x="16" y="17.5" width="50" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="KYn-bt-oJJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="ins-tI-UoB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEp-5k-a2i" userLabel="Title">
+                                <rect key="frame" x="74" y="16" width="252.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpP-OR-lwo" userLabel="Date">
+                                <rect key="frame" x="74" y="45" width="252.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lDF-rh-M3W" customClass="CustomUIImageView" customModule="ExamoleCellularModelDataSource" customModuleProvider="target">
+                                <rect key="frame" x="8" y="82" width="405" height="517.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="0lV-ZA-aOJ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="9E9-rC-f3i"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yx-8S-6iD" userLabel="Desc">
+                                <rect key="frame" x="8" y="615.5" width="405" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aAw-ov-aHR" firstAttribute="leading" secondItem="ey4-dk-3gQ" secondAttribute="leading" constant="16" id="4YX-Jb-ZYB"/>
+                            <constraint firstItem="1Yx-8S-6iD" firstAttribute="top" secondItem="lDF-rh-M3W" secondAttribute="bottom" constant="16" id="6ta-tn-7dz"/>
+                            <constraint firstItem="WpP-OR-lwo" firstAttribute="leading" secondItem="aAw-ov-aHR" secondAttribute="trailing" constant="8" id="7tc-nf-KYP"/>
+                            <constraint firstAttribute="trailing" secondItem="lDF-rh-M3W" secondAttribute="trailing" constant="8" id="PyE-Ot-ltE"/>
+                            <constraint firstItem="lDF-rh-M3W" firstAttribute="top" secondItem="WpP-OR-lwo" secondAttribute="bottom" constant="16" id="Srn-jg-B47"/>
+                            <constraint firstItem="lDF-rh-M3W" firstAttribute="centerX" secondItem="ey4-dk-3gQ" secondAttribute="centerX" id="XXG-P2-lz5"/>
+                            <constraint firstItem="WpP-OR-lwo" firstAttribute="width" secondItem="aEp-5k-a2i" secondAttribute="width" id="YN9-CK-rTh"/>
+                            <constraint firstItem="1Yx-8S-6iD" firstAttribute="leading" secondItem="lDF-rh-M3W" secondAttribute="leading" id="dQb-rq-35f"/>
+                            <constraint firstItem="lDF-rh-M3W" firstAttribute="leading" secondItem="ey4-dk-3gQ" secondAttribute="leading" constant="8" id="e1t-iT-NA2"/>
+                            <constraint firstAttribute="trailing" secondItem="1Yx-8S-6iD" secondAttribute="trailing" constant="8" id="fue-Jz-ymo"/>
+                            <constraint firstItem="aEp-5k-a2i" firstAttribute="top" secondItem="aAw-ov-aHR" secondAttribute="top" id="kwy-Xg-PtL"/>
+                            <constraint firstItem="WpP-OR-lwo" firstAttribute="bottom" secondItem="aAw-ov-aHR" secondAttribute="bottom" id="lo4-kn-skj"/>
+                            <constraint firstAttribute="bottom" secondItem="1Yx-8S-6iD" secondAttribute="bottom" constant="16" id="nEo-Hb-5Z1"/>
+                            <constraint firstItem="aAw-ov-aHR" firstAttribute="top" secondItem="ey4-dk-3gQ" secondAttribute="top" constant="16" id="swj-Qb-0Da"/>
+                            <constraint firstItem="aEp-5k-a2i" firstAttribute="width" secondItem="ey4-dk-3gQ" secondAttribute="width" multiplier="0.6" id="u2t-c1-okU"/>
+                            <constraint firstItem="aEp-5k-a2i" firstAttribute="leading" secondItem="aAw-ov-aHR" secondAttribute="trailing" constant="8" id="xDV-71-Ij6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ey4-dk-3gQ" firstAttribute="height" secondItem="ch2-4t-xWr" secondAttribute="height" id="MfR-5R-weE"/>
+                    <constraint firstItem="ey4-dk-3gQ" firstAttribute="leading" secondItem="ch2-4t-xWr" secondAttribute="leading" id="QZu-Y3-rWP"/>
+                    <constraint firstItem="ey4-dk-3gQ" firstAttribute="top" secondItem="ch2-4t-xWr" secondAttribute="top" id="ROI-Xn-TDw"/>
+                    <constraint firstItem="ey4-dk-3gQ" firstAttribute="width" secondItem="ch2-4t-xWr" secondAttribute="width" id="nDb-nK-QXW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="container" destination="ey4-dk-3gQ" id="RVb-l7-dVW"/>
+                <outlet property="dateLabel" destination="WpP-OR-lwo" id="GKb-az-040"/>
+                <outlet property="descLabel" destination="1Yx-8S-6iD" id="zad-Kc-LXV"/>
+                <outlet property="imageCard" destination="lDF-rh-M3W" id="Aeh-jk-4TR"/>
+                <outlet property="imageCharachter" destination="aAw-ov-aHR" id="quS-lb-wYW"/>
+                <outlet property="titleLabel" destination="aEp-5k-a2i" id="luN-XR-r9H"/>
+            </connections>
+            <point key="canvasLocation" x="109.42028985507247" y="257.8125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
+</document>

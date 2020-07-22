@@ -1,0 +1,6 @@
+framework module Pods_ExampleCellularModelDataSource {
+  umbrella header "Pods-ExampleCellularModelDataSource-umbrella.h"
+
+  export *
+  module * { export * }
+}

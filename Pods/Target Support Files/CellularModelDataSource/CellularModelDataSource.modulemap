@@ -1,0 +1,6 @@
+framework module ModelDataSource {
+  umbrella header "CellularModelDataSource-umbrella.h"
+
+  export *
+  module * { export * }
+}

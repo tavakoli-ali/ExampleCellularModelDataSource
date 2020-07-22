@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-ExampleCellularModelDataSource/Pods-ExampleCellularModelDataSource-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CellularModelDataSource/ModelDataSource.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework
